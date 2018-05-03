@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'Dancingscript';
+  src: url('DancingScript-Regular.ttf');
+}
+body{
+  font-family: 'Dancingscript';
+  background-color: #02010a;
+}
+.actual{
+  text-decoration: none;
+}
+#contenido{
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#encabezado{
+  background-color: #5b7989;
+  border-radius:10px 10px 0 0;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  animation: miAnimacion 0.5s;
+}
+@-webkit-keyframes miAnimacion{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+#encabezado h1{
+  box-sizing: border-box;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 2.5%;
+  padding-left: 1%;
+}
+#encabezado nav{
+  box-sizing: border-box;
+  width: 30%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 2.5%;
+  padding-right: 1%;
+}
+#encabezado li{
+  list-style: none;
+  display: inline;
+  margin: 1vh;
+}
+#encabezado nav ul li a{
+  color: white;
+  font-size: 20px;
+}
+#galeria{
+  width: 100%;
+  height: 600px;
+  background-color: #d5c75f;
+  display: flex;
+  flex-flow: row wrap;
+}
+.img1, .img2, .img3{
+  width: 30%;
+  height: 45%;
+  margin-left: 2.5%;
+  margin-top: 2%;
+}
+.img4, .img5, .img6{
+  width: 30%;
+  height: 45%;
+  margin-left: 2.5%;
+  margin-top:0;
+}
+#galeria img{
+  width: 100%;
+  height: 100%;
+}
+.img1{
+  -webkit-filter: blur(10px);
+  filter:blur(10px);
+}
+.img2, .img4, .img6{
+  filter: grayscale(100%);
+}
+.img3{
+  filter: sepia(90%);
+}
+footer{
+  width: 100%;
+  height: 200px;
+  background-color: #C6d5c5;
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: 0 0 10px 10px;
+  text-align: justify;
+}
+.bloque1{
+  flex-grow: 1;
+  margin-left: 5%;
+}
+.bloque2{
+  flex-grow: 1;
+  margin-left: 5%;
+}
+.bloque3{
+  flex-grow: 1;
+  margin-left: 5%;
+}
+.bloque4{
+  flex-grow: 1;
+  margin-left: 5%;
+}
+.bloque3 ul{
+  padding: 0;
+}
+.bloque3 ul li{
+  list-style: none;
+}
+footer a{
+  color: black;
+}
+@media all and (max-width:750px) {
+  #contenido{
+    width: 100%;
+  }
+  #encabezado{
+    width: 100%;
+    height: 100%;
+  }
+  #encabezado h1{
+    text-align: center;
+    width: 100%;
+    height: 50%;
+  }
+  #encabezado nav{
+    text-align: center;
+    width: 100%;
+    height: 50%;
+  }
+  #galeria{
+    width: 100%;
+    height: 100%;
+  }
+  #galeria div{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer{
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  .bloque1 h1{
+    margin-top: 0;
+  }
+}
